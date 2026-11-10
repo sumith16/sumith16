@@ -13,8 +13,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate Koi
-        uses: korandoru/git-profile-koi@v1 # Checks marketplace version
+      - - name: git-profile-koi
+          uses: yalongwastaken/git-koi@v1.0.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
