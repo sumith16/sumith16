@@ -28,7 +28,7 @@ jobs:
       - name: Commit the koi if it changed
         shell: bash
         run: |
-          git add koi/koi.gif
+          git add koi/
           if git diff --cached --quiet; then
             echo "The koi is unchanged; nothing to commit."
             exit 0
