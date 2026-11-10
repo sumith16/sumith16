@@ -1,4 +1,3 @@
-<!-- git-koi-start -->
-<!-- git-koi-end-->
-
-<img src="koi/koi.gif" width="256" alt="My GitHub Koi" />
+<p align="center">
+  <img src="koi/koi.gif" width="256" alt="Sumith's GitHub Koi" />
+</p>
