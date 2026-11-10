@@ -9,11 +9,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: Update Koi
-    permissions:
-      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Generate Koi
-        uses: kahnub/git-profile-koi@v1.0.0 # The official git-profile-koi action
+        uses: korandoru/git-profile-koi@v1 # Checks marketplace version
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit & Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "Update git-koi background" || exit 0
+          git push
