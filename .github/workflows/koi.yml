@@ -16,4 +16,4 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Generate Koi
-        uses: kahnub/git_profile_koi@v1 # The official git-profile-koi action
+        uses: kahnub/git-profile-koi@v1.0.0 # The official git-profile-koi action
